@@ -1,0 +1,10 @@
+<load file="./hdtg/App/Admin/Tpl/Common/header.html" />
+<link href="__PUBLIC__/css/index.css" rel="stylesheet" type="text/css" />
+<div id="map">
+	<span class='title'>站点概况</span>
+</div>
+<div id="content">
+	
+</div>
+</body>
+</html>

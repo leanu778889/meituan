@@ -1,0 +1,50 @@
+<load file="./Public/tpl/header.html"/><!-- 载入公共头部文件-->
+<link href="__PUBLIC__/css/userhome.css" type="text/css" rel="stylesheet" >
+<script type="text/javascript" src="__PUBLIC__/js/userhome.js"></script>
+<div id="main">
+	<div class='left'>
+		<ul class='userhome-nav'>
+			<li class='active' id="1">
+				<a href="{|U('Member/Order/index')}">团购订单</a>
+			</li>
+			<li id="2">
+				<a href="{|U('Member/Index/collect')}">我的收藏</a>
+			</li>
+			<li id="3">
+				<a href="{|U('Member/Account/index')}">美团余额</a>
+			</li>
+			<li id="4">
+				<a href="{|U('Member/Account/setting')}">账户设置</a>
+			</li>
+		</ul>
+		<script>
+
+				/**
+				* 获取cookie
+				* @param name
+				* @returns
+				*/
+				function getCookie(name){
+					var arr = document.cookie.split(';');
+					for(var i=0;i<arr.length;i++){
+						var	arr2 = arr[i].split('=');
+						var preg = new RegExp('\\b'+name+'\\b','i')
+						if(preg.test(arr2[0])){
+							return	arr2[1];
+						}
+					}
+				}
+				$('.userhome-nav li').click(function(){
+					var id = $(this).attr('id');
+					document.cookie = "userHomeNav="+id+';path=/';
+				})
+				var id = getCookie('userHomeNav');
+				$('.userhome-nav li').each(function(){
+					if($(this).attr('id') == id){
+						$(this).addClass('active');
+					}else{
+						$(this).removeClass('active');
+					}
+				})
+			</script>
+		<div id="content">

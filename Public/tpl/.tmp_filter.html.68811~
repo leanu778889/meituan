@@ -1,0 +1,70 @@
+<!-- 商品过滤开始 -->
+	<div id="filter">
+		<div class='hots'>
+			<span>热门团购：</span>
+			<div class='box'>	
+				<a href="">电影</a><a href="经济型酒店">经济型酒店</a><a href="自助餐">自助餐</a><a href="KTV">KTV</a><a href="火锅">火锅</a><a href="烧烤烤肉">烧烤烤肉</a><a href="本地/周边游">本地/周边游</a>
+			</div>	
+		</div>
+		
+		<div class='filter-box'>
+			<div class='category filter-label'>
+				<div class='filter-label-level-1'>
+					<span><b></b>分类：</span>
+					<div class='box'>
+						<foreach from="$topCategory" value="$v">
+							{$v}
+						</foreach>
+					</div>
+				</div>
+				<if value="$sonCategory">
+				<div class='filter-label-level-2'>
+					<div class='box'>
+						<foreach from="$sonCategory" value="$v">
+							{$v}
+						</foreach>
+					</div>
+				</div>
+				</if>
+			</div>
+			<div class='locality filter-label'>
+				<div class='filter-label-level-1'>
+					<span><b></b>区域：</span>
+					<div class='box'>
+						<foreach from="$topLocality" value="$v">
+							{$v}
+						</foreach>
+					</div>
+				</div>
+				<if value="$sonLocality">
+					<div class='filter-label-level-2'>
+						<div class='box'>
+							<foreach from="$sonLocality" value="$v">
+								{$v}
+							</foreach>
+						</div>
+					</div>
+				</if>
+			</div>
+			<div class='price filter-label'>
+				<div class='filter-label-level-1'>
+					<span><b></b>价格：</span>
+					<div class='box'>
+						<foreach from="$price" value="$v">
+							{$v}
+						</foreach>
+					</div>
+				</div>
+			</div>	
+			<div class='screen'>
+				<div>
+					<a class='active' href="">默认排序</a>
+					<a href="">销量<b></b></a>
+					<a href="">价格<b></b></a>
+					<a href="">价格<b style="background-position:-45px -16px;"></b></a>
+					<a style="border:0;" href="">发布时间<b></b></a>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!-- 商品过滤结束 -->

@@ -1,0 +1,40 @@
+	<load file="./Public/tpl/header.html"/>
+	<!-- 载入公共头部文件-->
+	<link href="__PUBLIC__/css/buy.css" type="text/css" rel="stylesheet" >
+	<div class='position'>
+		<form action="{|U('Member/Buy/checkBuy')}" method="post">
+		<div id="main">
+			<div class='step'>
+				<ul>
+					<li>1.查看购物车 </li>
+					<li class='current'>2.选择支付方式 </li>
+					<li>3.购买成功 </li>
+				</ul>
+			</div>
+			<ul class='buy-detail'>
+				<foreach from='$order' value='$v'>
+				<li>
+					<p>
+						<span>项目名称：</span>
+						<a href='{|U('Index/Detail/index')}/gid/{$v.gid}'>{$v.main_title}</a>
+					</p>
+					<input name='orderid[]' type='hidden' value='{$v.orderid}'/>
+					<p>
+						<span>商品数量：</span> {$v.goods_num}
+					</p>
+				</li>
+				</foreach>
+			</ul>
+			<div class='total'>
+				<p>总价：<strong>{$sumPrice}</strong></p>
+				<p>账户余额：<strong>{$balance}</strong></p>
+			</div>
+			<!-- 订单提交 -->
+			<div class='bottom'>
+				<input type="submit" class='submit' value="确认支付">
+			</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

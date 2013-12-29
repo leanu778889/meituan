@@ -1,0 +1,57 @@
+	<load file="./Public/tpl/header.html"/>
+	<!-- 载入公共头部文件-->
+	<!-- 载入商品筛选-->
+	<load file="./Public/tpl/filter.html"/>
+	<link href="__PUBLIC__/css/index.css" type="text/css" rel="stylesheet" >
+	<!-- 页面主体开始 -->
+	<div id="main">
+		<div class='content'>
+			<foreach from='$goods' value='$v'>
+			<div class='item'>
+				<div class='cover'>
+					<a href="{|U('Index/Detail/index')}/gid/{$v.gid}"><img src="__ROOT__/{$v['goods_img']}"/></a>
+				</div>
+				<a class='link' href="{|U('Index/Detail/index')}/gid/{$v.gid}">
+					<h3>{$v.main_title}</h3>
+					<p class='describe'>{$v.sub_title}</p>
+				</a>
+				<p class='detail'>
+					<strong>¥{$v.price}</strong>
+					<span>门店价<span>-</span><del>{$v.old_price}</del></span>
+					<a href="{|U('Index/Detail/index')}/gid/{$v.gid}"></a>
+				</p>
+				<p class='total'>
+					<strong>{$v.buy}</strong>
+					人已参与
+				</p>
+			</div>
+			</foreach>
+
+			<div class='c'></div>
+			<div class='page'>
+				{$page}
+			</div>
+		</div>
+		<div class='sidebar'>
+			<div class='hot-products'>
+				<h3>热卖商品</h3>
+				<ul>
+					<foreach from="$hotGoods" value="$v" key="$k">
+						<li>
+							<h6><span>{$k}</span><a href="{|U('Index/Detail/index')}/gid/{$v.gid}">{$v.main_title}</a></h6>
+							<a href="{|U('Index/Detail/index')}/gid/{$v.gid}"><img src="{$v.goods_img}"/></a>
+							<div class='info'>
+								<em>¥{$v.price}</em>
+								<p>每天<span>{$v.buy}</span>人团购</p>
+							</div>
+						</li>
+					</foreach>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class='c'></div>
+	<load file="./Public/tpl/footer.html"/>
+</body>
+</html>

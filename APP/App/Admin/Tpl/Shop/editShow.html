@@ -1,0 +1,64 @@
+<load file="__PUBLIC__/tpl/header.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=F175492a12ccf0e92d3b53ee04255a94"></script>
+<hdui/>
+<script type="text/javascript" src='__PUBLIC__/js/shop.js'></script>
+<div id="map">
+	<span class='title'>修改商铺</span>
+</div>
+<div id="content">
+	<form id='shopFrom' action="{|U('Admin/Shop/edit/shopid/'.$data['shopid'])}" method="post">
+	<table class='table table-striped table-bordered'>
+		<thead>
+			<tr>
+				<th width="20%">名称</th>
+				<th>值</th>
+			</tr>
+		</thead>
+		<tbody>
+
+			<tr>
+				<td>商铺名称</td>
+				<td>
+					<input type="text" name="shopname" value='{$data.shopname}'/>
+				</td>
+			</tr>
+			<tr>
+				<td>商铺地址</td>
+				<td>
+					<input type="text" name="shopaddress" value='{$data.shopaddress}'/>
+				</td>
+			</tr>
+			<tr>
+				<td>地铁地址</td>
+				<td>
+					<input type="text" name="metroaddress" value='{$data.metroaddress}'/>
+				</td>
+			</tr>
+			<tr>
+				<td>商铺电话</td>
+				<td>
+					<input type="text" name="shoptel" value='{$data.shoptel}'/>
+				</td>
+			</tr>
+			<tr>
+				<td>商铺坐标</td>
+				<td>
+					<input type="text" id='shopcoord' name="shopcoord" value='{$data.shopcoord}'/>
+					<input type='button' id='getAddBtn'  class='btn' value='获取坐标'/>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" class='btn' value='提交'/></td>
+			</tr>
+		</tbody>
+	</table>
+	</form>
+
+
+
+</div>
+</body>
+</html>

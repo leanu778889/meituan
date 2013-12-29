@@ -1,0 +1,45 @@
+	<load file="./Public/tpl/header.html"/>
+	<!-- 载入公共头部文件-->
+	<link href="__PUBLIC__/css/buy.css" type="text/css" rel="stylesheet" >
+	<div class='position'>
+		<div id="main">
+			<div class='step'>
+				<ul>
+					<li class='current'>1.查看购物车 </li>
+					<li>2.选择支付方式 </li>
+					<li>3.购买成功 </li>
+				</ul>	
+			</div>
+			<!-- 购物车列表 -->
+			<table class='buy-table' border=0>
+			<thead>
+				<tr>
+					<th>项目</th>
+					<th width='20%' style="text-align:left;">数量</th>
+					<th width='20%'>单价</th>
+					<th width='10%'>总价</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<a href="">天堂烧烤：双人餐，无需预约，美味享受</a>
+					</td>
+					<td class='goods-num'>
+						<a href="" class='reduce' id="reduce"></a>
+						<input id="num" type="text" value=1> 
+						<a href="" class='add' id="add"></a>
+					</td>
+					<td>-</td>
+					<td>12</td>
+				</tr>
+			</tbody>
+			</table>
+			<!-- 订单提交 -->
+			<div class='bottom'>
+				<input type="submit" class='submit' value="提交订单">
+			</div>
+		</div>
+	</div>	
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="__ROOT__/hdtg/App/Index/Tpl/Public/css/reset.css" type="text/css" rel="stylesheet" >
+<link href="__ROOT__/hdtg/App/Index/Tpl/Public/css/common.css" type="text/css" rel="stylesheet" >
+<script type="text/javascript" src="__ROOT__/hdtg/App/Index/Tpl/Public/js/common.js"></script>
+<meta name="keywords" content="{$webInfo.keywords}" />
+<meta name="description" content="{$webInfo.description}" />
+<title>{$webInfo.title}</title>
+
+</head>
+<body>
+	<!-- 顶部开始 -->
+	<div id="top">
+		<div class='position'>
+			<div class='left'>
+				后盾网，人人做后盾!
+			</div>
+			<div class='right'>
+				<a href="javascript:addFavorite2();">收藏</a>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部结束 -->
+	<!-- 头部开始 -->
+	<div id="header">
+		<div class='position'>
+			<div class='logo'>
+				<a href="__ROOT__">后盾团购</a>
+			</div>
+			<div class='search'>
+				<div class='item'>
+					<a href="">小时代</a>
+					<a href="">KTV</a>
+					<a href="">电影</a>
+					<a href="">全聚德</a>
+				</div>
+				<div class='search-bar'>
+					<input class='s-text' type="text" name="keywords" value="请输入商品名称，地址等">
+					<input class='s-submit' type="submit" value='搜索'>
+				</div>
+			</div>
+			<div class='commitment'>
+				
+			</div>
+		</div>
+	</div>
+	<!-- 头部结束 -->
+	<!-- 导航开始-->
+	<div id="nav">
+		<div class='position'>
+			<!-- 分类相关 -->
+			<div class='category'>
+				<a class='active' href="__ROOT__">首页</a>
+				<a href="http://localhost/hdtg/index.php/Index/Index/category/cid/11">美食</a>
+				<a href="http://localhost/hdtg/index.php/Index/Index/category/cid/13">电影</a>
+				<a href="http://localhost/hdtg/index.php/Index/Index/category/cid/14">KTV</a>
+				<a href="http://localhost/hdtg/index.php/Index/Index/category/cid/15">酒店</a>
+				<a href="http://localhost/hdtg/index.php/Index/Index/category/cid/16">休闲娱乐</a>
+			</div>
+			<!-- 用户相关 -->
+			<div class='user-relevance'>
+				 <div class='login-and-reg'>
+				 	
+				 </div>
+			</div>
+		</div>
+	</div> 
+	<!-- 导航结束 -->
+	

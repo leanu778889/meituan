@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="__ROOT__/Public/css/reset.css" type="text/css" rel="stylesheet" >
+<link href="__ROOT__/Public/css/common.css" type="text/css" rel="stylesheet" >
+<jquery/>
+<script type="text/javascript" src="__ROOT__/Public/js/common.js"></script>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>{$webInfo.title}</title>
+
+</head>
+<body>
+	<!-- 顶部开始 -->
+	<div id="top">
+		<div class='position'>
+			<div class='left'>
+				后盾网，人人做后盾!
+			</div>
+			<div class='right'>
+				<a href="javascript:addFavorite2();">收藏</a>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部结束 -->
+	<!-- 头部开始 -->
+	<div id="header">
+		<div class='position'>
+			<div class='logo'>
+				<a style="line-height:60px;" href="__ROOT__">后盾团购</a>
+				<a style="font-size:16px;" href="__ROOT__">www.houdunwang.com</a>
+			</div>
+			<div class='search'>
+				<div class='item'>
+					<a href="{|U('Index/Index/index')}/keywords/小时代">小时代</a>
+					<a href="{|U('Index/Index/index')}/keywords/KTV">KTV</a>
+					<a href="{|U('Index/Index/index')}/keywords/电影">电影</a>
+					<a href="{|U('Index/Index/index')}/keywords/全聚德">全聚德</a>
+				</div>
+				<div class='search-bar'>
+					<form action="{|U('Index/Index/index')}" method="post">
+						<input class='s-text' type="text" name="keywords" onfocus="if(value=='请输入商品名称，地址等'){value=''}" onblur="if(value==''){value='请输入商品名称，地址等'}"  value="请输入商品名称，地址等">
+						<input class='s-submit' type="submit" value='搜索'>
+					</form>
+				</div>
+			</div>
+			<div class='commitment'>
+
+			</div>
+		</div>
+	</div>
+	<!-- 头部结束 -->
+	<!-- 导航开始-->
+	<div id="nav">
+		<div class='position'>
+			<!-- 分类相关 -->
+			<div class='category'>
+				<foreach from='$topNav' key='$k' value='$v'>
+					{$v}
+				</foreach>
+			</div>
+			<script>
+				/*$('.category a').click(function(){
+					var category = $(this).attr('category');
+					document.cookie ='category='+category+';path=/';
+				})
+				var category = getCookie(' category');
+				if((typeof category) != 'string'){
+					category ="-1";
+				}
+				$('.category a').each(function(){
+					if($(this).attr('category') == category){
+						$(this).addClass('active');
+					}else{
+						$(this).removeClass('active');
+					}
+				})
+				function getCookie(name){
+					var arr = document.cookie.split(';');
+					for(var i=0;i<arr.length;i++){
+						var arr2 = arr[i].split('=');
+						if(arr2[0]==name){
+							return arr2[1];
+						}
+					}
+				}*/
+			</script>
+			<!-- 用户相关 -->
+			<div id="user-relevance" class='user-relevance'>
+				<if value='$isLogin'>
+					<div class='user-nav login-reg'>
+						<a class='title' href="{|U('Member/Login/quit')}">退出</a>
+					</div>
+					<!--我的团购 -->
+					<div class='user-nav my-hdtg '>
+						<a class='title' href="javascript:void(0)">我的团购</a>
+						<ul class="menu">
+							<li id="1"><a href="{|U('Member/Order/index')}">我的订单</a></li>
+							<li id="2"><a href="{|U('Member/Index/collect')}">我的收藏</a></li>
+							<li id="3"><a href="{|U('Member/Account/index')}">账户余额</a></li>
+							<li id="4"><a href="{|U('Member/Account/setting')}">账户设置</a></li>
+						</ul>
+					</div>
+				<script>
+				$('.my-hdtg .menu li').click(function(){
+					var id = $(this).attr('id');
+					document.cookie = "userHomeNav="+id+';path=/';
+				})
+			</script>
+				<else/>
+					<!--登录注册-->
+					<div class='user-nav login-reg'>
+						<a class='title' href="{|U('Member/Reg/index')}">注册</a>
+					</div>
+					<div class='user-nav login-reg'>
+						<a class='title' href="{|U('Member/Login/index')}">登录</a>
+					</div>
+				</if>
+
+				<!-- 最近浏览 -->
+					<div  class='user-nav recent-view ' url="{|U('Member/Index/getRecentView')}" goodsUrl ="{|U('Index/Detail/index')}" clearUrl="{|U('Member/Index/clearRecentView')}">
+						<a class='title' href="javascript:void(0)">最近浏览</a>
+						<ul class="menu">
+						</ul>
+					</div>
+					<!-- 我的购物车 -->
+					<div id='my-cart'  class='user-nav my-cart ' url="{|U('Member/Cart/index')}" goodsUrl="{|U('Index/Detail/index')}" delUrl="{|U('Member/Cart/delCart')}">
+						<a class='title' href="javascript:void(0)" ><i>&nbsp;</i>购物车</a>
+						<ul class="menu">
+							<p class='clear'>正在加载。。</p>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</div>
+	<!-- 导航结束 -->

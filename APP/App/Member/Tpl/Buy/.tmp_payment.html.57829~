@@ -1,0 +1,35 @@
+	<load file="./Public/tpl/header.html"/>
+	<!-- 载入公共头部文件-->
+	<link href="__PUBLIC__/css/buy.css" type="text/css" rel="stylesheet" >
+	<div class='position'>
+		<div id="main">
+			<div class='step'>
+				<ul>
+					<li>1.查看购物车 </li>
+					<li class='current'>2.选择支付方式 </li>
+					<li>3.购买成功 </li>
+				</ul>	
+			</div>
+			<ul class='buy-detail'>
+				<li>
+					<p>
+						<span>项目名称：</span>
+						耀莱成龙国际影城 — 电影票2张，周一至周五2D/3D/巨幕厅可兑
+					</p>
+					<p>
+						<span>商品数量：</span> 1
+					</p>
+				</li>
+			</ul>
+			<div class='total'>
+				<p>总价：<strong>21</strong></p>
+				<p>账户余额：<strong>21</strong></p>
+			</div>	
+			<!-- 订单提交 -->
+			<div class='bottom'>
+				<input type="submit" class='submit' value="确认支付">
+			</div>
+		</div>
+	</div>	
+</body>
+</html>

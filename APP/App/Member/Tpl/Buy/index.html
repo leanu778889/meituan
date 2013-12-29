@@ -1,0 +1,86 @@
+	<load file="./Public/tpl/header.html"/>
+	<!-- 载入公共头部文件-->
+	<link href="__PUBLIC__/css/buy.css" type="text/css" rel="stylesheet" >
+	<script src="__PUBLIC__/js/buy.js"></script>
+	<div class='position'>
+		<form action="{|U('Member/Buy/payment')}" method="post">
+			<input type="hidden" name="gid" value="{$goods.gid}">
+			<input type="hidden" name="price" value="{$goods.price}">
+		<div id="main">
+			<div class='step'>
+				<ul>
+					<li class='current'>1.查看购物车 </li>
+					<li>2.选择支付方式 </li>
+					<li>3.购买成功 </li>
+				</ul>
+			</div>
+			<!-- 购物车列表 -->
+			<table class='buy-table' border=0>
+			<thead>
+				<tr>
+					<th>项目</th>
+					<th width='25%' style="text-align:left;">数量</th>
+					<th width='20%'>单价</th>
+					<th width='10%'>总价</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class='goods-show'>
+						<img src="{$goods.goods_img}">
+						<a style="text-align:left;" href="{|U('Index/Detail/index')}/gid/{$goods.gid}">{$goods.main_title}</a>
+					</td>
+					<td class='goods-num'>
+						<a href="javascript:void(0);" class='reduce reduceBuy' id="reduce"></a>
+						<input class="goodsNum" name="goods_num" id="num" type="text" value=1>
+						<a href="javascript:void(0);" class='add addBuy' id="add"></a>
+					</td>
+					<td id="price">{$goods.price}</td>
+					<td id="total">{$goods.price}</td>
+				</tr>
+			</tbody>
+			</table>
+			<div class='address-list'>
+			<table>
+				<thead>
+					<tr>
+						<th>选择</th>
+						<th width="20%">收货人</th>
+						<th>地址/邮编</th>
+						<th width="20%">电话/手机</th>
+						<th width="20%">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach from="$address" key='$k' value="$v">
+					<tr>
+						<td>
+							<input type="radio" <if value='$k==0'>checked=true</if> name="addressid" value="{$v.addressid}">
+						</td>
+						<td>
+							{$v.consignee}
+						</td>
+						<td>
+						{$v.province}-{$v.city}-{$v.county}-{$v.street}
+						</td>
+						<td>
+							{$v.tel}
+						</td>
+						<td>
+							<a href="{|U('Member/Account/delAddress')}/addressid/{$v.addressid}">删除</a>
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			</div>
+
+			<!-- 订单提交 -->
+			<div class='bottom'>
+				<input type="submit" class='submit' value="提交订单">
+			</div>
+		</div>
+		</form>
+	</div>
+</body>
+</html>

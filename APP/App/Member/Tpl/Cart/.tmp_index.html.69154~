@@ -1,0 +1,138 @@
+	<load file="./Public/tpl/header.html"/>
+	<!-- 载入公共头部文件-->
+	<link href="__PUBLIC__/css/cart.css" type="text/css" rel="stylesheet" >
+	<div id="main">
+		<div class='step'>
+			<div class='cart-title'>
+				<i></i>
+				<div>
+					<h3>
+						我的购物车
+					</h3>
+					<p>
+						<span class='cart-bar-bg'>
+							<span></span>
+						</span>
+						<b>2/20</b>
+					</p>
+				</div>
+			</div>
+			<ul>
+				<li class='current'>1.查看购物车 </li>
+				<li>2.选择支付方式 </li>
+				<li>3.购买成功 </li>
+			</ul>	
+		</div>
+		<!-- 购物车列表 -->
+		<table class='cart-table' border=0>
+			<thead>
+				<tr>
+					<th width='35%'>项目</th>
+					<th width='15%'>状态</th>
+					<th width='15%'>类型/数量</th>
+					<th width='10%'>单价</th>
+					<th width='10%'>小计</th>
+					<th width='10%'>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class='goods-show'>
+						<img src="http://p1.meituan.net/75.46/deal/__14462820__8797659.jpg">
+						<a href="">天堂烧烤：双人餐，无需预约，美味享受</a>
+					</td>
+					<td>已购买</td>
+					<td class='goods-num'>
+						<a href="" class='reduce' id="reduce"></a>
+						<input id="num" type="text" value=1> 
+						<a href="" class='add' id="add"></a>
+					</td>
+					<td>-</td>
+					<td>-</td>
+					<td>删除</td>
+				</tr>
+				<tr>
+					<td class='goods-show'>
+						<img src="http://p1.meituan.net/75.46/deal/__14462820__8797659.jpg">
+						<a href="">天堂烧烤：双人餐，无需预约，美味享受</a>
+					</td>
+					<td>已购买</td>
+					<td class='goods-num'>
+						<a href="" class='reduce' id="reduce"></a>
+						<input id="num" type="text" value=1> 
+						<a href="" class='add' id="add"></a>
+					</td>
+					<td>-</td>
+					<td>-</td>
+					<td>删除</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td colspan=3 class='total'>
+						应付总额： <strong>¥<span>117</span></strong> 
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- 收货地址 -->
+		<div class="address">
+			<div class='address-hd'>
+				收货地址<a href="">管理</a>
+			</div>
+			<div class='address-base'>
+				<dl>
+					<dt>*省市区：</dt>
+					<dd>
+						<select id="s_province" name="s_province"></select>
+						<select id="s_city" name="s_city" ></select>
+						<select id="s_county" name="s_county"></select>
+						<script type="text/javascript" src="__ROOT__/classLibs/area/area.js"></script>
+						<script type="text/javascript">_init_area();</script>
+					</dd>
+				</dl>
+				<dl>
+					<dt>*街道地址：</dt>
+					<dd style="width:450px;">
+						<input name="" type="text" value="">
+					</dd>
+				</dl>
+				<dl>
+					<dt>*邮政编码：</dt>
+					<dd>
+						<input name="" type="text" value="">
+					</dd>
+				</dl>
+				<dl>
+					<dt>*收货人姓名：</dt>
+					<dd>
+						<input name="" type="text" value="">
+					</dd>
+				</dl>
+				<dl>
+					<dt>*电话号码：</dt>
+					<dd>
+						<input type="text" value=""> 
+					</dd>
+				</dl>
+			</div>
+			<div class='sh-time'>
+				<p class='sh-time-title'>希望送货的时间</p>
+				<p><input type="radio" name="time">只工作日送货(双休日、假日不用送，写字楼/商用地址客户请选择)</p>
+				<p><input type="radio" name="time">只双休日、假日送货(工作日不用送)</p>
+				<p><input type="radio" name="time">学校地址/地址白天没人，请尽量安排其它时间送货 (特别安排可能会超出预计送货天数)</p>
+				<p><input type="radio" name="time">工作日、双休日与假日均可送货</p>
+			</div>
+			<div class='remark'>
+				<p>配送说明<span>（快递公司由商家根据情况选择，请不要指定。其他要求会尽量协调）</span></p>
+				<input type="text" >
+			</div>
+		</div>
+		<!-- 订单提交 -->
+		<div class='bottom'>
+			<input type="submit" class='submit' value="提交订单">
+		</div>
+	</div>
+</body>
+</html>

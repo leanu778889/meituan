@@ -1,0 +1,13 @@
+<load file="./hdtg/App/Member/Tpl/Common/userhome-hd.html" />
+		<link href="__PUBLIC__/css/account.css" type="text/css" rel="stylesheet" >
+		<div class='setting-nav'>
+			<a class='active' href="">基本信息</a>
+			<a href="">收货地址</a>
+		</div>
+		<div class='baseinfo'>
+			<dl><dt>手机号： </dt><dd>158****9630</dd><span></span></dl>
+			<dl><dt>邮　箱： </dt><dd>928020070@qq.com</dd><span>未验证，<a href="">立即验证</a></span></dl>
+			<dl><dt>用户名： </dt><dd>_qqcd71349674843</dd><span></span></dl>
+			<dl><dt>密　码： </dt><dd>••••••</dd><span><a href="">修改</a></span></span></dl>
+		</div>	
+<load file="./hdtg/App/Member/Tpl/Common/userhome-ft.html" />

@@ -1,0 +1,64 @@
+<load file="__PUBLIC__/../Common/userhome-hd.html" />
+		<link href="__PUBLIC__/css/index.css" type="text/css" rel="stylesheet" >
+		<div class='collect-nav'>
+			<a href="{|U('Member/Index/collect')}" class='active'>全部</a>
+			<a href="{|U('Member/Index/collect')}/status/1">进行中的团购</a>
+			<a href="{|U('Member/Index/collect')}/status/2">已结束</a>
+		</div>
+		<div class='collect-list'>
+			<if value="{$collect}">
+			<table>
+				<thead>
+					<tr>
+						<th>团购项目</th>
+						<th width="10%">金额</th>
+						<th width="15%">状态</th>
+						<th width="15%">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach from="$collect" value="$v">
+					<tr>
+						<td class='goods-show'>
+							<img src="{$v.goods_img}">
+							<a href="{|U('Index/Detail/index')}/gid/{$v.gid}">{$v.main_title}</a>
+						</td>
+						<td>
+							¥{$v.price}
+						</td>
+						<td>
+							{$v.end_time}
+						</td>
+						<td>
+							<a class='btn' href="{|U('Member/Buy/index')}/gid/{$v.gid}">购买</a><a href="{|U('Member/Index/delCollect')}/gid/{$v.gid}">删除</a>
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<else>
+			暂无收藏信息
+			</if>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<load file="__PUBLIC__/../Common/userhome-ft.html" />

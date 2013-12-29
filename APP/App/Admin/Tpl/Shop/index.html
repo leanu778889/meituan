@@ -1,0 +1,34 @@
+<load file="__PUBLIC__/tpl/header.html" />
+<div id="content">
+	<table id='table' class='table table-striped table-bordered'>
+		<thead>
+			<tr>
+				<th width='15%'>商铺名称</th>
+				<th width='23%'>商铺地址</th>
+				<th width='25%'>地铁地址</th>
+				<th width='15%'>商铺电话</th>
+				<th >操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<foreach from='$data' value='$v'>
+				<tr>
+					<td>{$v.shopname}</td>
+					<td>{$v.shopaddress}</td>
+					<td>{$v.metroaddress}</td>
+					<td>{$v.shoptel}</td>
+					<td>
+						<a class="btn btn-small" href='{|U("Admin/Goods/addShow/shopid/".$v["shopid"])}'>添加商品</a>
+						<a class="btn btn-small" href='{|U("Admin/Shop/editShow/shopid/".$v["shopid"])}'>编辑</a>
+						<a class="btn btn-small delAffirm" href='{|U("Admin/Shop/del/shopid/".$v["shopid"])}'>删除</a>
+					</td>
+				</tr>
+			</foreach>
+		</tbody>
+	</table>
+	<div id='page'>
+		{$page}
+	</div>
+</div>
+</body>
+</html>

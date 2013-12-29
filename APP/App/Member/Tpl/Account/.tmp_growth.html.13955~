@@ -1,0 +1,47 @@
+<load file="./hdtg/App/Member/Tpl/Common/userhome-hd.html" />
+		<link href="__PUBLIC__/css/account.css" type="text/css" rel="stylesheet" >
+		<div class='growth-nav'>
+			我的成长信息
+		</div>
+		<div id="growth">
+			<div class='growth-hd'>
+				<p>我当前的等级是：<i></i></p>
+				<p>我目前的成长值是:<strong>0</strong></p>
+			</div>
+			<div class='rate-bar'>
+				<span class='growth-rate-bg'>
+					<span></span>
+				</span>
+				<ul>
+					<li class='first'>
+						<i style="background-position:0px 0px;"></i><br/>
+						<span>0</span>
+					</li>
+					<li>
+						<i style="background-position:0px -25px;"></i><br/>
+						<span>0</span>
+					</li>
+					<li>
+						<i style="background-position:0px -50px;"></i><br/>
+						<span>0</span>
+					</li>
+					<li>
+						<i style="background-position:0px -75px;"></i><br/>
+						<span>0</span>
+					</li>
+					<li>
+						<i style="background-position:0px -100px;"></i><br/>
+						<span>0</span>
+					</li>
+					<li>
+						<i style="background-position:0px -125px;"></i><br/>
+						<span>0</span>
+					</li>
+					<li class='last'>
+						<i style="background-position:0px -150px;float:right;"></i>
+						<span style="float:right; text-align:right;">0</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+<load file="./hdtg/App/Member/Tpl/Common/userhome-ft.html" />

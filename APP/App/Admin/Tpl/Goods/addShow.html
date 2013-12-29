@@ -1,0 +1,119 @@
+<load file="__PUBLIC__/tpl/header.html" />
+<hdui/>
+<jqueryui/>
+<script type="text/javascript" src='__PUBLIC__/js/goods.js'></script>
+<div id="map">
+	<span class='title'>添加商品</span>
+</div>
+<div id="content">
+	<form id='goodsFrom' action="{|U('Admin/Goods/add')}" method="post">
+	<table class='table table-striped table-bordered'>
+		<thead>
+			<tr>
+				<th width="20%">名称</th>
+				<th>值</th>
+			</tr>
+		</thead>
+		<tbody>
+
+			<tr>
+				<td>商铺名称</td>
+				<td>
+					<input type="hidden" name="shopid" value='{$shop.shopid}'/>
+					{$shop.shopname}
+				</td>
+			</tr>
+			<tr>
+				<td>所属分类</td>
+				<td>
+					<select name='cid'>
+						<option value='0'>顶级分类</option>
+						<foreach from='$category' value='$v'>
+							<option value='{$v.cid}'>|-{$v.html}{$v.cname}</option>
+						</foreach>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>所属地区</td>
+				<td>
+					<select name='lid'>
+						<option value='0'>顶级地区</option>
+						<foreach from='$locality' value='$v'>
+							<option value='{$v.lid}'>|-{$v.html}{$v.lname}</option>
+						</foreach>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>商品主标题</td>
+				<td>
+					<input type='text' name='main_title'/>
+				</td>
+			</tr>
+			<tr>
+				<td>商品副标题</td>
+				<td>
+					<input type='text' name='sub_title'/>
+				</td>
+			</tr>
+			<tr>
+				<td>现价</td>
+				<td>
+					<input type='text' name='price'/>
+				</td>
+			</tr>
+			<tr>
+				<td>原价</td>
+				<td>
+					<input type='text' name='old_price'/>
+				</td>
+			</tr>
+			<tr>
+				<td>上架时间</td>
+				<td>
+					<input type='text' id='begin_time' name='begin_time'/>
+				</td>
+			</tr>
+			<tr>
+				<td>下架时间</td>
+				<td>
+					<input type='text' id='end_time' name='end_time'/>
+				</td>
+			</tr>
+			<tr>
+				<td>商品示例图</td>
+				<td>
+					<upload size="5" type="jpg,png,gif" limit="1" name="goods_img" thumb="460,280,200,100,310,190,92,54"/>
+				</td>
+			</tr>
+			<tr>
+				<td>商品服务</td>
+				<td>
+					<foreach from='$goods_server' key='$k' value='$v'>
+						<label>
+							<input type='checkbox' value='{$k}' name='goods_server[]'>
+							{$v.name}
+						</label>
+					</foreach>
+				</td>
+			</tr>
+			<tr>
+				<td>商品详情</td>
+				<td>
+					<ueditor name="detail"/>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" class='btn' value='提交'/></td>
+			</tr>
+		</tbody>
+	</table>
+	</form>
+
+
+
+</div>
+</body>
+</html>

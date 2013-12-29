@@ -1,0 +1,157 @@
+	<load file="__TPL__/common/header.html"/>
+	<!-- 载入公共头部文件-->
+	<link href="__PUBLIC__/css/index.css" type="text/css" rel="stylesheet" >
+	<!-- 页面主体开始 -->
+	<div id="main">
+		<div class='content'>
+			<div class='item'>
+				<div class='cover'>
+					<a href=""><img src="http://p0.meituan.net/312.189/deal/__15404175__1789751.jpg"/></a>
+				</div>
+				<h3>【全国】三星GALAXY S4免费送！</h3>
+				<p class='describe'>美梦成真：三星GALAXY S4，美团网免费送！采用5英寸Full HD </p>
+				<p class='detail'>
+					<strong>¥0</strong>
+					<span>门店价<span>-</span></span>
+					<a href=""></a>
+				</p>
+				<p class='total'>
+					<strong>304641</strong>
+					人已参与
+				</p>
+			</div>
+			<div class='item'>
+				<div class='cover'>
+					<a href=""><img src="http://p0.meituan.net/312.189/deal/__15404175__1789751.jpg"/></a>
+				</div>
+				<h3>【全国】三星GALAXY S4免费送！</h3>
+				<p class='describe'>美梦成真：三星GALAXY S4，美团网免费送！采用5英寸Full HD </p>
+				<p class='detail'>
+					<strong>¥0</strong>
+					<span>门店价<span>-</span></span>
+					<a href=""></a>
+				</p>
+				<p class='total'>
+					<strong>304641</strong>
+					人已参与
+				</p>
+			</div>
+			<div class='item'>
+				<div class='cover'>
+					<a href=""><img src="http://p0.meituan.net/312.189/deal/__15404175__1789751.jpg"/></a>
+				</div>
+				<h3>【全国】三星GALAXY S4免费送！</h3>
+				<p class='describe'>美梦成真：三星GALAXY S4，美团网免费送！采用5英寸Full HD </p>
+				<p class='detail'>
+					<strong>¥0</strong>
+					<span>门店价<span>-</span></span>
+					<a href=""></a>
+				</p>
+				<p class='total'>
+					<strong>304641</strong>
+					人已参与
+				</p>
+			</div>
+			<div class='item'>
+				<div class='cover'>
+					<a href=""><img src="http://p0.meituan.net/312.189/deal/__15404175__1789751.jpg"/></a>
+				</div>
+				<h3>【全国】三星GALAXY S4免费送！</h3>
+				<p class='describe'>美梦成真：三星GALAXY S4，美团网免费送！采用5英寸Full HD </p>
+				<p class='detail'>
+					<strong>¥0</strong>
+					<span>门店价<span>-</span></span>
+					<a href=""></a>
+				</p>
+				<p class='total'>
+					<strong>304641</strong>
+					人已参与
+				</p>
+			</div>
+			<div class='item'>
+				<div class='cover'>
+					<a href=""><img src="http://p0.meituan.net/312.189/deal/__15404175__1789751.jpg"/></a>
+				</div>
+				<h3>【全国】三星GALAXY S4免费送！</h3>
+				<p class='describe'>美梦成真：三星GALAXY S4，美团网免费送！采用5英寸Full HD </p>
+				<p class='detail'>
+					<strong>¥0</strong>
+					<span>门店价<span>-</span></span>
+					<a href=""></a>
+				</p>
+				<p class='total'>
+					<strong>304641</strong>
+					人已参与
+				</p>
+			</div>
+			<div class='item'>
+				<div class='cover'>
+					<a href=""><img src="http://p0.meituan.net/312.189/deal/__15404175__1789751.jpg"/></a>
+				</div>
+				<h3>【全国】三星GALAXY S4免费送！</h3>
+				<p class='describe'>美梦成真：三星GALAXY S4，美团网免费送！采用5英寸Full HD </p>
+				<p class='detail'>
+					<strong>¥0</strong>
+					<span>门店价<span>-</span></span>
+					<a href=""></a>
+				</p>
+				<p class='total'>
+					<strong>304641</strong>
+					人已参与
+				</p>
+			</div>
+			<div style="clear:both;"></div>
+			<div class='page'>
+				
+			</div>
+		</div>
+		<div class='sidebar'>
+			<div class='hot-products'>
+				<h3>热卖商品</h3>
+				<ul>
+					<li>
+						<h6><span>1</span><a href="">【2店通用】CGV星星国际影城电影</a></h6>
+						<a href=""><img src="http://p1.meituan.net/deal/201301/04/173144_2860489.jpg"/></a>
+						<div class='info'>
+							<em>¥30</em>
+							<p>每天<span>231</span>人团购</p>
+						</div>
+					</li>
+					<li>
+						<h6><span>1</span><a href="">【2店通用】CGV星星国际影城电影</a></h6>
+						<a href=""><img src="http://p1.meituan.net/deal/201301/04/173144_2860489.jpg"/></a>
+						<div class='info'>
+							<em>¥30</em>
+							<p>每天<span>231</span>人团购</p>
+						</div>
+					</li>
+					<li>
+						<h6><span>1</span><a href="">【2店通用】CGV星星国际影城电影</a></h6>
+						<a href=""><img src="http://p1.meituan.net/deal/201301/04/173144_2860489.jpg"/></a>
+						<div class='info'>
+							<em>¥30</em>
+							<p>每天<span>231</span>人团购</p>
+						</div>
+					</li>
+					<li>
+						<h6><span>1</span><a href="">【2店通用】CGV星星国际影城电影</a></h6>
+						<a href=""><img src="http://p1.meituan.net/deal/201301/04/173144_2860489.jpg"/></a>
+						<div class='info'>
+							<em>¥30</em>
+							<p>每天<span>231</span>人团购</p>
+						</div>
+					</li>
+					<li>
+						<h6><span>1</span><a href="">【2店通用】CGV星星国际影城电影</a></h6>
+						<a href=""><img src="http://p1.meituan.net/deal/201301/04/173144_2860489.jpg"/></a>
+						<div class='info'>
+							<em>¥30</em>
+							<p>每天<span>231</span>人团购</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

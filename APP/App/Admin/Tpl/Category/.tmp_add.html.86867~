@@ -1,0 +1,11 @@
+<load file="./hdtg/App/Admin/Tpl/Common/header.html" />
+<div id="map">
+	<span class='title'>添加分类</span>
+</div>
+<div id="content">
+	
+	
+	
+</div>
+</body>
+</html>

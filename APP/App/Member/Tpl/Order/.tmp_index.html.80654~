@@ -1,0 +1,127 @@
+<load file="./hdtg/App/Member/Tpl/Index/userhome-hd.html" />
+		<div class='order-nav'>
+			<a href="" class='active'>全部</a>
+			<a href="">未使用</a>
+			<a href="">即将到期</a>
+			<a href="">待付款</a>
+			<a href="">待评价</a>
+			<a href="">已使用</a>
+			<a href="">已过期</a>
+			<a href="">已退款</a>
+		</div>
+		<div class='order-list'>
+			<table>
+				<thead>
+					<tr>
+						<th width="50%">团购项目</th>
+						<th width="10%">数量</th>
+						<th width="10%">金额</th>
+						<th width="15%">订单状态</th>
+						<th width="15%">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class='goods-show'>
+							<img src="http://p1.meituan.net/75.46/deal/__14462820__8797659.jpg">
+							<a href="">天堂烧烤：双人餐，无需预约，美味享受</a>
+						</td>
+						<td>
+							1
+						</td>
+						<td>
+							¥3.90
+						</td>
+						<td>
+							<span>未付款</span><br/>
+							<a href="" >订单详情</a>
+						</td>
+						<td>
+							<a class='btn' href="">付款</a><br/>
+							<a href="">删除订单</a>
+						</td>
+					</tr>
+					<tr>
+						<td class='goods-show'>
+							<img src="http://p1.meituan.net/75.46/deal/__14462820__8797659.jpg">
+							<a href="">天堂烧烤：双人餐，无需预约，美味享受</a>
+						</td>
+						<td>
+							1
+						</td>
+						<td>
+							¥3.90
+						</td>
+						<td>
+							<span>未付款</span><br/>
+							<a href="" >订单详情</a>
+						</td>
+						<td>
+							<a class='btn' href="">付款</a><br/>
+							<a href="">删除订单</a>
+						</td>
+					</tr><tr>
+						<td class='goods-show'>
+							<img src="http://p1.meituan.net/75.46/deal/__14462820__8797659.jpg">
+							<a href="">天堂烧烤：双人餐，无需预约，美味享受</a>
+						</td>
+						<td>
+							1
+						</td>
+						<td>
+							¥3.90
+						</td>
+						<td>
+							<span>未付款</span><br/>
+							<a href="" >订单详情</a>
+						</td>
+						<td>
+							<a class='btn' href="">付款</a><br/>
+							<a href="">删除订单</a>
+						</td>
+					</tr><tr>
+						<td class='goods-show'>
+							<img src="http://p1.meituan.net/75.46/deal/__14462820__8797659.jpg">
+							<a href="">天堂烧烤：双人餐，无需预约，美味享受</a>
+						</td>
+						<td>
+							1
+						</td>
+						<td>
+							¥3.90
+						</td>
+						<td>
+							<span>未付款</span><br/>
+							<a href="" >订单详情</a>
+						</td>
+						<td>
+							<a class='btn' href="">付款</a><br/>
+							<a href="">删除订单</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>	
+		</div>
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<load file="./hdtg/App/Member/Tpl/Index/userhome-ft.html" />

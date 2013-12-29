@@ -1,0 +1,90 @@
+<load file="./hdtg/App/Member/Tpl/Common/userhome-hd.html" />
+		<link href="__PUBLIC__/css/account.css" type="text/css" rel="stylesheet" >
+		<div class='setting-nav'>
+			<a class='active' href="">基本信息</a>
+			<a href="">收货地址</a>
+		</div>
+		<div class='address-list'>
+			<table>
+				<thead>
+					<tr>
+						<th width="20%">收货人</th>
+						<th>地址/邮编</th>
+						<th width="20%">电话/手机</th>
+						<th width="20%">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							郑印
+						</td>
+						<td>
+							北京 北京 朝阳区 小营路四方大厦，100000
+						</td>
+						<td>
+							158****9630
+						</td>
+						<td>
+							<a href="">删除</a>
+							<a href="">修改</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							郑印
+						</td>
+						<td>
+							北京 北京 朝阳区 小营路四方大厦，100000
+						</td>
+						<td>
+							158****9630
+						</td>
+						<td>
+							<a href="">删除</a>
+							<a href="">修改</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>	
+		</div>
+		<!-- 收货地址 -->
+		<div id="addressForm" class="address">
+			<div class='address-base'>
+				<dl>
+					<dt>*省市区：</dt>
+					<dd style="width:400px;">
+						<select id="s_province" name="s_province"></select>
+						<select id="s_city" name="s_city" ></select>
+						<select id="s_county" name="s_county"></select>
+						<script type="text/javascript" src="__ROOT__/classLibs/area/area.js"></script>
+						<script type="text/javascript">_init_area();</script>
+					</dd>
+				</dl>
+				<dl>
+					<dt>*街道地址：</dt>
+					<dd style="width:450px;">
+						<input name="" type="text" value="">
+					</dd>
+				</dl>
+				<dl>
+					<dt>*邮政编码：</dt>
+					<dd>
+						<input name="" type="text" value="">
+					</dd>
+				</dl>
+				<dl>
+					<dt>*收货人姓名：</dt>
+					<dd>
+						<input name="" type="text" value="">
+					</dd>
+				</dl>
+				<dl>
+					<dt>*电话号码：</dt>
+					<dd>
+						<input type="text" value=""> 
+					</dd>
+				</dl>
+			</div>
+		</div>	
+<load file="./hdtg/App/Member/Tpl/Common/userhome-ft.html" />
